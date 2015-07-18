@@ -67,6 +67,7 @@ module Git
       arr_opts << '--config' << opts[:config] if opts[:config]
       arr_opts << '--origin' << opts[:remote] || opts[:origin] if opts[:remote] || opts[:origin]
       arr_opts << '--recursive' if opts[:recursive]
+      arr_opts << '--mirror' if opts[:mirror]
 
       arr_opts << '--'
 
